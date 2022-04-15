@@ -19,10 +19,18 @@ div#main {
   height: 35rem;
   background-color: lightgray;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: stretch;
 }
 
 div#column-left {
   margin: 3rem;
+  min-width: 0;
+  flex-basis: 0%;
+  flex-grow: 2;
+  max-width: fit-content;
 }
 
 div#column-right {
@@ -30,6 +38,11 @@ div#column-right {
   margin: 3rem 3rem 3rem 0;
   display: flex;
   flex-direction: column;
+}
+
+div#column-left > div {
+  height: 100%;
+  max-width: fit-content;
 }
 
 div#column-left > img {
