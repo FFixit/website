@@ -10,7 +10,7 @@ const { href, title } = Astro.props;
     <a href={href} target="_blank" rel="noopener noreferrer">
         <span class="icon">
             <slot />
-        </span><span>{title}</span>
+        </span><span class="text">{title}</span>
     </a>
 </div>
 
@@ -36,9 +36,15 @@ const { href, title } = Astro.props;
     }
 
     div.link .icon {
+        aspect-ratio: 1;
+        flex: 1 1 0%;
         color: inherit;
         display: flex;
         height: 100%;
         margin: 0 0.5em 0 0;
+    }
+
+    div.link .text {
+        flex: 1 1 100%;
     }
 </style>
