@@ -5,7 +5,7 @@ import Link from '../components/Link.astro';
 ---
 
 <Layout title="Felix Flügel">
-	<main>
+	<div class="grid">
 		<div class="left">
 			<Picture />
 		</div>
@@ -27,34 +27,14 @@ import Link from '../components/Link.astro';
 				</Link>
 			</div>
 		</div>
-	</main>
+	</div>
 </Layout>
 
 <style>
-	main {
-		flex: 1 1 100%;
-		margin: 0;
-		padding: 2em;
-		min-width: 50%;
-		max-width: 50rem;
-		min-height: 50%;
-		max-height: 30rem;
-		border-radius: 0.5em;
-		overflow: hidden;
-		background: rgba(109, 108, 112, 0.7);
+	div.grid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		backdrop-filter: blur(10px);
-		box-sizing: border-box;
-		border: 1px solid;
-	}
-
-	@media (max-width: 50rem) {
-		main {
-			border-radius: 0;
-			border-left: none;
-			border-right: none;
-		}
+		grid-template-rows: 1fr;
 	}
 
 	div.left {

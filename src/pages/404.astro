@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Not found">
+    <div class="container">
+        <h1>Error 404 &dash; Not found</h1>
+        <p>The page you were looking for does not exist.</p>
+    </div>
+</Layout>
+
+<style>
+    div.container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p {
+        font-size: var(--font-size-lg);
+    }
+</style>
