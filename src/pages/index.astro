@@ -33,7 +33,7 @@ import Link from '../components/Link.astro';
 <style>
 	div.grid {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: 1fr;
 	}
 
@@ -42,8 +42,8 @@ import Link from '../components/Link.astro';
 	}
 
 	div.right {
-		grid-column: span 2;
-		padding: 0 0 0 2rem;
+		grid-column: span 1;
+		padding: 2em;
 		display: flex;
 		flex-direction: column;
 	}
@@ -65,10 +65,10 @@ import Link from '../components/Link.astro';
 		display: flex;
 		flex-direction: column;
 		align-items: stretch;
-		justify-content: space-evenly;
-		row-gap: .5em;
+		justify-content: center;
+		row-gap: 1em;
 	}
-
+	
 	h1 {
 		margin: 0;
 	}

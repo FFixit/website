@@ -57,7 +57,7 @@ const { title } = Astro.props as Props;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/img/background.webp');
+    background: rgba(50, 50, 50, 1);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -67,17 +67,16 @@ const { title } = Astro.props as Props;
     flex: 1 1 100%;
     display: grid;
     margin: 0;
-    padding: 2em;
-    min-width: 50%;
+    padding: 0;
+    min-width: 25%;
     max-width: 50rem;
-    min-height: 50%;
+    min-height: 40%;
     max-height: 30rem;
     border-radius: 0.5em;
     overflow: hidden;
-    background: rgba(126, 125, 129, 0.7);
+    background: rgb(198, 197, 201);
     box-sizing: border-box;
     border: 1px solid;
-    backdrop-filter: blur(10px);
   }
 
   @media (max-width: 50rem) {
